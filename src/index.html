@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body class="bg-body-secondary">
+  <nav class="navbar bg-info-subtle" id="navbarr" style="height: 70px;">
+    <div class="container-fluid">
+      <h1 class="ms-3 text-primary text-bg-light p-3 rounded-4"><a href="#" class="text-decoration-none">Gabriel
+          Pongelupe de Carvalho<br> <span class="curso">Curso: Engenharia de Software || Matricula: 00804009</span> </a></h1>
+      <form class="d-flex" role="search" style="width: 300px; height: 35px;">
+        <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" style="width: 100px;">Search</button>
+      </form>
+      <p class="fs-4"><strong>carrinho de compras na parte de baixo</strong> </p>
+      <button id="carrinho_compras"><ion-icon name="cart-outline"></ion-icon> <div id="quantidadecima"> 0 </div> </button>
+    </div>
+  </nav>
+
+  
+
+  <div class="col-3 mt-5 mx-5 p-3 border border-black rounded-3 bg-info">
+    <div class="search1">
+      <form class="pesquisa" id="pesquisaRapida">
+        <h3>Pesquisa Rápida - Ache seus produtos</h3>
+        <p class="paragrafo">Os melhores produtos pelo melhor preço</p>
+
+        <div class="mb-2">
+          <select  class="categorias" id="tipos" style="width: 130px; height: 20px;">
+            <option class="opção">Tipo</option>
+            <option class="opção">men's clothing</option>
+            <option class="opção">jewelery</option>
+            <option class="opção">electronics</option>
+            <option class="opção">women's clothing</option>
+            <option class="opção">Qualquer um</option>
+          </select>
+        </div>
+
+        <div>
+          <select class="categorias" id="categoria" style="width: 130px; height: 20px;">
+            <option class="opcao">Categoria</option>
+            <option class="opcao">Melhores Preços</option>
+            <option class="opcao">Mais Baratos</option>
+            <option class="opcao">Não Esgotados</option>
+            <option class="opcao">Qualquer uma</option>
+          </select>
+        </div>
+
+
+        <div><a onclick="pesquisarapida()" class="btn btn-primary mt-3">Enviar</a> </div>
+
+
+      </form>
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+  <div class="">
+    <div class="container my-5 py-5">
+      <div class="row">
+        <div class="col-12 mb-5">
+          <h1 class="display-6 fw-bolder text-center">Latest Products</h1>
+          <h1 class="display-6 fw-bolder text-center">
+            ___________________________________________________________________</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2 id="catcat"></h2>
+  </div>
+
+  <div class="container">
+    <div class="products">
+      
+    </div>
+  </div>
+
+
+  <div id="carrinho" class="d-flex justify-content-center">
+    <div class="row"></div>
+    <h1 class="bg-black text-white m-5 p-3 rounded-4">Seu carrinho</h1>
+
+  </div>
+  <h1 id="total" class="mx-5 mb-3 mt-3">Número de itens: <span class="border border-dark bg-danger text-white px-2 py-0 pb-1 rounded-5">0</span> <br> total: $00,00</h1>
+  <div class="carrinho_de_compras">
+    <div id="carrinho_container">
+      
+
+
+
+
+
+    </div>
+
+  </div>
+  
+  </div>
+  
+  </div>
+
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
